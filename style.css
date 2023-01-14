@@ -1,0 +1,265 @@
+:root {
+  --back-color: black;
+  --enfasis-color: aqua;
+}
+
+body {
+  background-color: var(--back-color);
+}
+
+/* navbar */
+
+.navbar {
+  background: var(--back-color);
+  color: white;
+} 
+
+.nav-link {
+  color: white !important;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+}  
+
+/* hero section */
+
+.hero-sup {
+  color: white;
+  font-size: 1.5em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hero-sup img {
+  opacity: 0.2;
+  position: absolute;
+  /*width: 100%; */
+  transition: all 0.5s ease-out;
+}
+
+.hero-sup:hover img {
+  opacity: 0.1;
+}
+
+.hero .row {
+  margin: 80px 15px;
+}
+
+.hero-name {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-icon {
+  font-size: 90px;
+  color: var(--enfasis-color);
+  padding-left: 1.5em;
+}
+
+.hero-inf {
+  color: white;
+  padding-bottom: 40px;
+  font-family: Raleway, sans-serif;
+}
+
+/* experience section */
+
+.exp-label {
+  color: black;
+  background: white;
+  padding: 10px;
+
+}
+
+.exp {
+  color: black;
+  padding: 40px;
+  margin: 125px 0px;
+  font-size: 10px;
+}
+
+.exp-icons {
+  color: var(--enfasis-color);
+  font-size: 30px;
+  padding: 10px;
+}
+
+.exp .row div {
+  /* height: 250px; */
+  color: white;
+  font-size: 17px;
+  font-family: Raleway, sans-serif;
+  padding: 40px;
+}
+
+.atribution-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+
+/* Projects section */
+
+.projects-label {
+  background: white;
+  color: black;
+  padding: 10px;
+
+}
+
+.projects {
+  margin: 90px 0px;
+}
+
+.projects .column-proyect {
+  color: white;
+  /* height: 220px; */
+  justify-content: space-between;
+  transition: opacity 1s;
+}
+
+.column-proyect img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.column-proyect h4 {
+  font-size: 16px;
+  margin: 50px;
+}
+
+.more-proyects {
+  margin: 40px 0px;
+  padding: 10px 10px;
+}
+
+.more-proyects i {
+  font-size: 40px;
+}
+
+.more-proyects a {
+  text-decoration: none;
+  color: var(--enfasis-color);
+}
+
+.column-proyect {
+  position: relative;
+}
+
+.overlay {
+  transition: all 1s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+.overlay .btn a {
+  font-size: 2.5em;
+  color: white;
+}
+
+.overlay p {
+  margin: 0px 20px;
+}
+
+.column-proyect:hover img {
+  opacity: 0.1;
+}
+
+.column-proyect:hover .overlay {
+  opacity: 1;
+}
+
+/*Contact section*/
+
+.contact {   
+  padding: 10px;
+  border-radius: 30px;
+  margin: 180px 30px;
+}
+
+.contactcol {
+  height: 180px;
+  font-size: 18px;
+  color: var(--enfasis-color);
+}
+
+.contactcol i {
+  font-size: 50px !important;
+}
+
+.contactcol .mail {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contact p {
+  font-size: 15px;
+}
+
+.contactcol .mail-icon a {
+  color: var(--enfasis-color);
+}
+
+/* envelope transition */
+
+.contactcol .bi-envelope-at-fill {
+  transition: all 0s ease;
+  opacity: 1;
+}
+
+.contactcol .envelopeicon_opened {
+  transition: all 0s ease;
+  opacity: 0;
+}
+
+.contactcol:hover .bi-envelope-at-fill {
+  opacity: 0;
+  position: absolute;
+}
+
+.contactcol:hover .envelopeicon_opened{
+  opacity: 1;
+}
+
+/*footer*/
+
+.foot {
+  background: var(--back-color);
+}
+
+.foot .row {
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.foot h5 {
+  color: white;
+  font-family: Montserrat, sans-serif;
+
+}
+
+.foot a {
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+}
+
+.foot i {
+  font-size: 30px;
+  color: white;
+}
+
+/* media querys */
+
+@media screen and (max-width: 767px) {
+  .hero-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-sup img {
+    display: none;
+  }
+}
